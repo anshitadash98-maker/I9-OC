@@ -45,6 +45,7 @@ export default function App() {
           ].map((tab) => (
             <button
               key={tab.key}
+              aria-current={activeTab === tab.key ? "page" : undefined}
               onClick={() => setActiveTab(tab.key)}
               style={{
                 flex: 1,
